@@ -20,7 +20,7 @@ function updateDisplay() {
      } else {
         if(outputValue === '0') {
          calculator.outputValue = digit;
-        } else if(!(calculator.outputValue.length > 15)) {
+        } else if(!(calculator.outputValue.length > 11)) {
          calculator.outputValue += digit;
         }
      }
