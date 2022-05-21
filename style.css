@@ -1,0 +1,181 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ccccff;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.output {
+    font-size: 25px;
+    font-style: oblique;
+    background-color: #1C1C1C;
+    border: none;
+    color: white;
+    width: 260px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 50px;
+}
+
+button {
+    border: none;
+}
+
+.digits {
+    background-color: #1C1C1C;
+    border-radius: 40px;
+    box-shadow: 0px 0px 2px 2px rgb(32, 32, 32);
+    border: 5px solid rgba(87, 85, 85, 0.6);
+    outline: 5px solid rgb(32, 32, 32);
+    margin-top: 5em;
+    width: 300px;
+    height: 550px;
+}
+
+.results {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 6em;
+}
+
+.top, .upper, .middle, .lower, .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: 7px;
+}
+
+#clear, #negative, #percentage {
+    color: black;
+    background-color: #a8a8a8;
+    padding: 22px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+#divide, #multiply, #subtraction, #addition, #equals {
+    color: white;
+    background-color: #FF9500;
+    padding: 22px;
+    margin-right: 12px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+#seven, #eight, #nine, #four, #five, #six, #one, #two, #three, #decimal {
+    color: white;
+    background-color: #505050;
+    padding: 25px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+#zero {
+    color: white;
+    background-color: #505050;
+    padding: 25px;
+    padding-right: 100px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+#clear, #seven, #four, #one, #zero {
+    margin-left: 12px;
+}
+
+#seven:focus, #eight:focus, #nine:focus, #four:focus, #five:focus, #six:focus, 
+#one:focus, #two:focus, #three:focus, #decimal:focus, #zero:focus {
+    animation-duration:  .8s;
+    animation-name: fade;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#seven:active, #eight:active, #nine:active, #four:active, #five:active, #six:active, 
+#one:active, #two:active, #three:active, #decimal:active, #zero:active  {
+    animation: none;
+}
+
+#clear:focus, #negative:focus, #percentage:focus {
+    animation-duration: .8s;
+    animation-name: fade-2;
+    transition: 3s;
+}
+
+#clear:active, #negative:active, #percentage:active {
+    animation: none;
+}
+
+#divide:focus, #multiply:focus, #subtraction:focus, #addition:focus, #equals:focus {
+    animation-duration: 1s;
+    animation-name: fade-3;
+    transition: 3s;
+}
+
+#divide:active, #multiply:active, #subtraction:active, #addition:active, #equals:active {
+    animation: none;
+}
+
+@keyframes fade {
+    from {
+        background-color: #727272;
+    }
+    
+    50% {
+        background-color: #707070;
+    }
+
+    to {
+        background-color: #505050;
+    }
+}
+
+@keyframes fade-2 {
+    from {
+        background-color: #c5c5c5;
+    }
+    
+    50% {
+        background-color: #f1f1f1;
+    }
+
+    to {
+        background-color: #a8a8a8;
+    }
+}
+
+@keyframes fade-3 {
+    from {
+        background-color: #FF9500;
+        color: white;
+    }
+    
+    50% {
+        background-color: #e2e2e2;
+        color: #FF9500;
+    }
+
+    to {
+        background-color: #FF9500;
+        color: white;
+    }
+}
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <audio id="audio" style="display:none" src="audio.mp3"></audio>
+        <h3>Iphone Calculator Replication</h3>
+        <div class="digits">
+            <div class="results">
+                <input class="output" value="0" disabled/>
+            </div>
+        <div class="buttons">
+            <div class="top">
+                <button onclick="playAudio()" type="button" class="clear" id="clear" value="clear">AC</button>
+                <button onclick="playAudio()" type="button" class="negative" id="negative" value="+/-">+/-</button>
+                <button onclick="playAudio()" type="button" class="percentage" id="percentage" value="%">%</button>
+                <button onclick="playAudio()" type="button" class="operator" id="divide" value="÷">÷</button>
+            </div>
+            <div class="upper">
+                <button onclick="playAudio(), changeClear()" type="button" class="number" id="seven" value="7">7</button>
+                <button onclick="playAudio(), changeClear()" type="button" class="number" id="eight" value="8">8</button>
+                <button onclick="playAudio(), changeClear()" type="button" class="number" id="nine" value="9">9</button>
+                <button onclick="playAudio()" type="button" class="operator" id="multiply" value="x">x</button>
+            </div>
+            <div class="middle">   
+                <button onclick="playAudio(), changeClear()" type="button" class="number" id="four" value="4">4</button>
+                <button onclick="playAudio(), changeClear()" type="button" class="number" id="five" value="5">5</button>
+                <button onclick="playAudio(), changeClear()" type="button" class="number" id="six" value="6">6</button>
+                <button onclick="playAudio()" type="button" class="operator" id="subtraction" value="-">-</button>
+            </div> 
+            <div class="lower">  
+                <button onclick="playAudio(), changeClear()" type="button" class="number" id="one" value="1">1</button>
+                <button onclick="playAudio(), changeClear()" type="button" class="number" id="two" value="2">2</button>
+                <button onclick="playAudio(), changeClear()" type="button" class="number" id="three" value="3">3</button>
+                <button onclick="playAudio()" type="button" class="operator" id="addition" value="+">+</button>
+            </div>
+            <div class="bottom">
+                <button onclick="playAudio()" type="button" class="number" id="zero" value="0">0</button>
+                <button onclick="playAudio(), changeClear()" type="button" class="decimal" id="decimal" value=".">.</button>
+                <button onclick="playAudio()" type="button" class="equals" id="equals" value="=">=</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
