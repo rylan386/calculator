@@ -31,7 +31,6 @@ body {
     margin-bottom: 20px;
     text-align: right;
     font-size: 40px;
-    max-width: 270px;
 }
 
 button {
@@ -53,6 +52,7 @@ button {
     display: flex;
     justify-content: flex-end;
     padding-top: 6em;
+    flex-direction: column;
 }
 
 .top, .upper, .middle, .lower, .bottom {
