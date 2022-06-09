@@ -31,7 +31,7 @@ body {
     margin-bottom: 20px;
     text-align: right;
     font-size: 40px;
-    width: 270px;
+    max-width: 270px;
 }
 
 button {
